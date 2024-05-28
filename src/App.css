@@ -1,0 +1,683 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  src: url('rubik.ttf');
+  font-family: Rubik;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: Rubik;
+}
+.div-img{
+  margin-left: 41%;
+  width: 18%;
+  height: 40px;
+  opacity: 0.8;
+}
+.div-img img{
+  width: 100%;
+  height: 100%;
+}
+.tab{
+  display: inline;
+  margin-left: 40px;
+}
+h1{
+  text-align: center;
+}
+/* --------------------------------- Header Section --------------------------------- */
+.head{
+  position: sticky;
+  height:60px;
+  background-color: hsl(0, 0%, 90%);
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 20;
+}
+.logo-size{
+  margin-left: 3%;
+  float: left;
+  width: 120px;
+  height: 60px;
+  top :25px;
+  left: 10px;
+}
+.logo-size img{ 
+  height: 95%;
+  width: 100%;
+}
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+} 
+.menu{
+  display: flex;
+}
+.navbar .menu li{
+  padding: 2px;
+}
+.menu li a{
+  padding: 13px;
+  display: inline-block;
+  margin:  3px;
+  text-decoration: none;
+  color: hsl(0, 0%, 27%);
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  font-size: 0.9em;
+  border-radius: 5%;
+  position: relative;
+}
+.navbar .menu li:hover{
+  border-radius: 5%;
+  background-color: hsl(0, 0%, 70%);
+}
+.navbar .menu li:hover a{
+  color: hsl(0, 0%, 99%);
+}
+.nav-open,.nav-close{
+  position: absolute;
+  cursor: pointer;
+  color: black;
+  font-size: 2em;
+  display: none;
+}
+#nav-check{
+  display: none;
+}
+.nav-open{
+  top:50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.nav-close{
+  top:40px;
+  right: 20px;
+  transform: translateY(-50%);
+}
+/* --------------------------------- Objective Section --------------------------------- */
+.objective{ 
+  word-wrap: break-word;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  background-color: hsl(0, 0%, 95%);
+  background-repeat:no-repeat ;
+  background-size: cover;
+  position: relative;
+
+}
+.obj-img{
+  padding: 10px;
+  height: 500px;
+  margin: 0px;
+  float: left;
+  width: calc(38%);
+}
+.obj-img .fade-bottom {
+  display: block;
+  width: 80%; /* Adjust as needed */
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+}
+.obj-img img{
+  margin-left: 10%;
+  height: 100%;
+}
+.obj-content{
+  height: 500px;
+  margin: 10px;
+  float: left;
+  width: calc(58%);
+}
+.obj-content h1{
+  color: hsl(0, 0%, 27%);
+  padding: 5px;
+  text-shadow: 2px 2px 3px rgb(111, 111, 111);
+  margin: 10px 0 0 0;
+  text-align: left;
+  font-size: 3em;
+}
+.obj-content h2{
+  color: hsl(0, 0%, 27%);
+  padding: 5px;
+  margin:60px 0 0 0;
+}
+.obj-content h3{
+  color: hsl(0, 0%, 27%);
+  padding: 5px;
+  font-size: 2em;
+  margin: 30px  0 0 0;
+}
+.obj-content p{
+  padding: 5px;
+  text-align: justify;
+  margin: 30px 10px 0 0px;
+}
+/* --------------------------------- About me Section --------------------------------- */
+.aboutme {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.aboutme h1 {
+  opacity: 0.8;
+  margin: 95px 0 0 0;
+}
+.aboutme h3 {
+  color: hsl(0, 0%, 27%);
+  margin-top: 60px;
+}
+.aboutme p {
+  text-align: justify;
+  margin: 20px 20px 0 20px;
+}
+.profile-img {
+  position: relative;
+  margin: 60px 20px 60px 60px;
+  float: left;
+  width: 230px;
+  height: 285px;
+  border: solid 2px rgb(205, 205, 205);
+  box-shadow: 1px 1px 2px rgb(98, 98, 98);
+}
+.profile-img img {
+  margin-left: 25px;
+  width: 180px;
+  height: 240px;
+  border-radius: 60%;
+}
+.down-cv {
+  text-decoration: none;
+  text-align: center;
+  position: absolute;
+  left: 0px;
+  bottom: 2px;
+  width: 70%;
+  margin: 1% 15% 1% 15%;
+  border-radius: 7px;
+  color: hsl(0, 0%, 27%);
+  background-color: hsl(0, 0%, 99%);
+  height: 30px;
+  border: none;
+  padding: 5px;
+  transition: 0.3s;
+}
+.down-cv:hover {
+  background-color: hsl(0, 0%, 70%);
+  transform: scale(1.05);
+}
+.info-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.info {
+  margin: 5px;
+  width: 48%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.info p {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+.info-d {
+  margin-left: auto;
+  opacity: 0.75;
+}
+/* --------------------------------- Project Section --------------------------------- */
+.project-area {
+  position: relative;
+  clear: both;
+  margin: 40px 0 20px 0;
+  background-color: hsl(0, 0%, 95%);
+  z-index: 11;
+  height: auto;
+}
+.project-area h1{
+  opacity: 0.8;
+  text-align:center;
+}
+.project-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.project{
+  width: 28%;
+  margin: 1%;
+  border: solid 1px;
+  border-radius: 5%;
+  padding: 10px;
+  height: auto;
+  box-shadow: 5px 5px 5px hsl(0, 0%, 27%);
+  transition: transform 0.3s;
+  display: flex;
+  align-items:flex-start;
+  justify-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.proj-img {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  display: inline-block;
+  width: 80px;
+  margin-bottom: 10px;
+  margin-right: 10px; 
+  vertical-align:middle;
+}
+.proj-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.project-area h1{
+  padding-top: 90px;
+  margin: 20px 0 0 0;
+}
+.project h3{
+  opacity: 0.8;
+  padding: 10px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+.project h4{
+  opacity: 0.8;
+  padding: 10px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+.project p{
+  text-align: justify;
+  margin: 5px;
+  padding: 5px;
+}
+.project:hover{
+  opacity: 1;
+  background-color: hsl(0, 0%, 80%);
+  transform: scale(1.05);
+}
+/* --------------------------------- Skills Section --------------------------------- */
+.skills{
+  opacity: 0.8;
+  margin-left:  20px;
+  height: auto;
+}
+.skills h1{
+  padding-top: 90px;
+}
+.skill-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.skill-box{
+  width: 45%;
+  margin: 2%;
+}
+.skill{
+  font-size: 1.2em;
+  margin: 10px;
+  padding: 10px;
+  transition: 0.3s;
+}
+.skill p{
+  text-align: left;
+}
+.skill:hover{
+  opacity: 1;
+  transform: scale(1.1);
+}
+.s-bar{
+  margin: 5px;
+  position: relative;
+  height: 15px;
+  background: hsl(232, 98%, 83%);
+  border-radius: 7px;
+  overflow: hidden;
+}
+.s-per{
+  font-size: 0.75em;
+  text-align: right;
+  height: 100%;
+  position: absolute;
+  background: hsl(232, 95%, 57%);
+  color: rgb(255, 255, 255);
+  top:0px;
+  bottom: 0px;
+}
+/* --------------------------------- Course Work Section --------------------------------- */
+.courseworks{
+  opacity: 0.8;
+  background-color: hsl(0, 0%, 95%);
+  opacity: 0.8;
+  position: relative;
+  margin: 0 0 20px 0;
+}
+.courseworks h1{
+  padding-top: 90px;
+}
+.c-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.c-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 47%;
+  margin: 1%;
+  height: auto;
+}
+.course{
+  width: 94%;
+  margin: 2%;
+  transition: 0.3s;
+  border: solid 1px;
+  border-radius: 7px;
+  box-shadow: 5px 5px 5px hsl(0, 0%, 30%);
+}
+.course h4{
+  font-size: 1.2em;
+  margin: 10px 0 0 10px;
+  padding: 10px;
+  text-align: center;
+}
+.course p{
+  margin: 5px 10px 10px 10px;
+  padding: 10px;
+  text-align: justify;
+}
+.course:hover{
+  transform: scale(1.05);
+  background-color: hsl(0, 0%, 80%);
+  border-radius: 7px;
+  color: black;
+  opacity: 1;
+}
+/* --------------------------------- Club Activities Section --------------------------------- */
+.club-act{
+  opacity: 0.8;
+  position: relative;
+  clear: both;
+  margin: 40px 0 20px 0;
+  z-index: 11;
+}
+.club-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.club{
+  width: 40%;
+  margin: 1%;
+  padding: 1%;
+  transition: 0.3s;
+  border: solid 0.25px hsl(0, 0%, 80%);
+  border-radius: 7px;
+
+}
+.club h4,p{
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+.club:hover{
+  transform: scale(1.05);
+  background-color: hsl(0, 0%, 80%);
+  color: black;
+  opacity: 1;
+}
+/* --------------------------------- Hobbies Section --------------------------------- */
+.hobbies{
+  background-color: hsl(0, 0%, 95%);
+  opacity: 0.8;
+  margin: 40px 0 20px 0;
+  height: auto;
+}
+.hobbies h1{
+  padding-top: 60px;
+}
+.hob-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.hobby{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 40%;
+  margin: 1%;
+  padding: 1%;
+  transition: 0.3s;
+  border: solid 0.25px hsl(0, 0%, 80%);
+  border-radius: 7px;
+}
+.hobby h4{
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+.h-img {
+  display: inline-block;
+  width: 50px;
+  margin-right: 10px; 
+  vertical-align:middle;
+}
+.h-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hobby:hover{
+  transform: scale(1.05);
+  background-color: hsl(0, 0%, 80%);
+  color: black;
+  opacity: 1;
+}
+/* --------------------------------- Footer Section --------------------------------- */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  background-color: hsl(0, 0%, 48%);
+  height: auto;
+  padding: 20px 0;
+}
+.f-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  text-decoration: none;
+  color: hsl(0, 0%, 80%);
+}
+.f-item i {
+  margin-bottom: 10px;
+}
+.f-item a, .f-item p {
+  color: hsl(0, 0%, 80%);
+  text-decoration: none;
+  margin: 0;
+}
+/* --------------------------------- Media Query max-950px --------------------------------- */
+@media screen  and (max-width:950px){
+  .objective{
+      width: 100%;
+      height: auto;
+  }
+  .obj-img{
+      width: 60%;
+      margin: 0 0 0 20%;
+  }
+  .obj-content{
+      width: 100%;
+      margin:  0 0 3% 7%;
+      height: auto;
+  }
+  .obj-content h1,h2,h3,p{
+      margin: 10px 0 0 0px ;
+  }
+  .aboutme h3{
+      width: 100%;
+      margin-top: 30px;
+      text-align: center;
+  }
+  .profile-img {
+      float: none;
+      margin: 20px auto;
+      width: 30%;
+      height: auto;
+      margin-left: 35%;
+  }
+  .info {
+      width: 47%;
+      margin: 10px 0;
+  }
+  .project-area{
+      height: auto;
+  }
+  .project {
+      width: 48%; 
+      margin: 1%;
+  }
+}
+/* --------------------------------- Media Query max-500px --------------------------------- */
+@media screen and (max-width:500px) {
+  .head{
+      background-color: white;
+  }
+  .div-img{
+      display: none;
+  }
+  .menu{
+      display: flex;
+      flex-direction: column;
+      align-items:flex-start;
+      justify-content: center;
+      position: fixed;
+      top: 0px;
+      right: -100%;
+      width: 80%;
+      z-index: 100;
+      height: 100vh;
+      background-color: hsl(0, 0%, 90%);
+      transition: all 0.2s ease-in-out;
+      margin-bottom: 5%;
+  }
+  .menu li{
+      margin-top: 5px;
+      border-bottom: solid 1px hsl(0, 0, 27%) ;
+  }
+  .menu a{
+      padding: 5px;
+  }
+  .menu a:hover{
+      border-bottom: solid 1px hsl(0%, 0%, 99%);
+  }
+  .nav-open,.nav-close{
+      display: block;}
+  #nav-check:checked ~.menu{
+      right: 0;
+  }
+  #nav-check:checked + .nav-open {
+      display: none;
+  }
+  .objective{
+      height: auto;
+  }
+  .obj-img{
+      margin: 10px 0 4% 8%;
+      width: 80%;
+      float: none;
+      height: 400px;
+  }
+  .obj-content{
+      margin: 10px 0 0 20px;
+      width: 90%;
+      float: none;
+  }
+  .aboutme h3{
+      text-align: center;
+  }
+  .aboutme p{
+      margin-bottom: 0px;
+  }
+  .profile-img{
+      width: 230px;
+      margin-left:20%;
+  }
+  .info{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+    float: none;
+  }
+  .project-area{
+      height: auto;
+  }
+  .project {
+      width: 88%;
+      margin: 5%;
+  }
+  .project:hover{
+      transform: scale(1.01);
+  }
+  .skill-box{
+      display: block;
+      width: 94%;
+      margin: 3%;
+  }
+  .c-box{
+      display: block;
+      width: 95%;
+      margin: 1%;
+  }
+  .course{
+      display: block;
+      width: 93%;
+      margin: 3;
+  }
+  .course:hover{
+      transform: scale(1.03);
+  }
+  .club{
+      display: block;
+      width: 94%;
+      margin: 3%;
+  }
+  .club:hover{
+      transform: scale(1.03);
+  }
+  .hobby{
+      display: block;
+      width: 94%;
+      margin: 3%;
+  }
+  .hobby:hover{
+      transform: scale(1.03);
+  }
+  .f-item{
+      width: 100%;
+  }
+}
