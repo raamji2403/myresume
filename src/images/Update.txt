@@ -1,0 +1,7 @@
+Assests or Code updation:
+
+git add .
+git commit -m "Updated Assets or Code"
+git push origin master
+
+npm run deploy
