@@ -32,7 +32,7 @@ function AboutMe() {
                 <div className="info">
                     <p><span className="info-t">Age :</span><span className="info-d">20 Years</span></p><hr/>
                     <p><span className="info-t">Dept. :</span><span className="info-d">Information Technology</span></p><hr/>
-                    <p><span className="info-t">CGPA :</span><span className="info-d">8.07</span></p><hr/>
+                    <p><span className="info-t">CGPA :</span><span className="info-d">8.11</span></p><hr/>
                     <p><span className="info-t">State :</span><span className="info-d">Tamil Nadu</span></p><hr/>
                     <p><span className="info-t">Email :</span><span className="info-d">araamji2403@gmail.com</span></p>
                 </div>

@@ -206,7 +206,7 @@ h1{
   margin: 1% 15% 1% 15%;
   border-radius: 7px;
   color: hsl(0, 0%, 27%);
-  background-color: hsl(0, 0%, 99%);
+  background-color: hsl(0, 3%, 80%);
   height: 30px;
   border: none;
   padding: 5px;
@@ -596,7 +596,8 @@ h1{
       border-bottom: solid 1px hsl(0%, 0%, 99%);
   }
   .nav-open,.nav-close{
-      display: block;}
+      display: block;
+    }
   #nav-check:checked ~.menu{
       right: 0;
   }
