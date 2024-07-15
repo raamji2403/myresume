@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# A static resume page
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Changes 
+
+src/images 
 
 ## Available Scripts
 
