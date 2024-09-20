@@ -19,7 +19,7 @@ function Skills(){
                         <div className="s-bar"></div>
                     </div>
                     <div className="skill">
-                        <p>Java Script</p>
+                        <p>JavaScript</p>
                         <div className="s-bar"> </div>
                     </div>
                     <div className="skill">
