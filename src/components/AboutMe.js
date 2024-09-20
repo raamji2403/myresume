@@ -1,7 +1,7 @@
 import React from "react";
 import divimg from "../images/div-img.png";
 import profile from "../images/profile.png";
-import cv from "../images/Raamji_resume.pdf";
+import cv from "../images/Raamji_Resume.pdf";
 
 
 function AboutMe() {
@@ -18,7 +18,9 @@ function AboutMe() {
             <div className="content">
                 <h3>Raamji A</h3>
                 <p>
-                    <span className="tab"></span> Hello, I am Raamji from Krishnagiri, currently in my final year of B.Tech in Information Technology at PSG College of Technology, Coimbatore. I completed my schooling at Ashok Missions Matric Higher Secondary School in Krishnagiri.
+                    <span className="tab"></span> Hello, I am Raamji from Krishnagiri, currently pursuing my final year , B. Tech Information Technology at 
+                    PSG College of Technology, Coimbatore. I completed my schooling at Ashok Missions Matric Higher 
+                    Secondary School in Krishnagiri.
                 </p>
             </div>
             <div className="info-container">

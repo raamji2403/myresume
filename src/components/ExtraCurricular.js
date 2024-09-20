@@ -1,7 +1,7 @@
 import React from "react";
 import divimg from "../images/div-img.png";
 import badminton from "../images/badminton.png";
-import anime from "../images/anime.png";
+import coding from "../images/coding.png";
 
 function ExtraCurricular() {
     return (
@@ -47,9 +47,9 @@ function ExtraCurricular() {
                     </div>
                     <div className="hobby">
                         <span className="h-img">
-                            <img src={anime} alt=""/>
+                            <img src={coding} alt=""/>
                         </span>
-                        <h4>Watching Anime</h4>
+                        <h4>Coding DSA</h4>
                     </div>
                 </div>
             </div>

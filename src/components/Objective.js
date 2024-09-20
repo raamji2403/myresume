@@ -1,5 +1,5 @@
 import React from "react";
-import main from "../images/main.png";
+import main from "../images/profile2.png";
 
 function Objective(){
     return(
