@@ -33,11 +33,11 @@ function Skills(){
                 </div>
                 <div className="skill-box">
                     <div className="skill"> 
-                        <p>HTML</p>
+                        <p>HTML/CSS</p>
                         <div className="s-bar"> </div>
                     </div>
                     <div className="skill">
-                        <p>CSS</p>
+                        <p>ReactJS</p>
                         <div className="s-bar"> </div>
                         </div>
                     <div className="skill"> 
