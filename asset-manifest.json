@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/myresume/static/css/main.75e8d3cc.css",
-    "main.js": "/myresume/static/js/main.991f9583.js",
+    "main.js": "/myresume/static/js/main.dd9764cf.js",
     "static/js/453.f19e9853.chunk.js": "/myresume/static/js/453.f19e9853.chunk.js",
     "static/media/rubik.ttf": "/myresume/static/media/rubik.3a4acc0356c6ea73f2c3.ttf",
-    "static/media/main.png": "/myresume/static/media/main.6be5ab7cbfe4f4dce01d.png",
     "static/media/profile.png": "/myresume/static/media/profile.90d531283418c6c453eb.png",
+    "static/media/profile2.png": "/myresume/static/media/profile2.1207160ebfae99ce0dce.png",
     "static/media/iot.png": "/myresume/static/media/iot.dd5726f61a69b77bd269.png",
-    "static/media/anime.png": "/myresume/static/media/anime.98e1de47eaf0853e09da.png",
-    "static/media/Raamji_resume.pdf": "/myresume/static/media/Raamji_resume.8cbd8fd2afd3d224d4a0.pdf",
+    "static/media/Raamji_Resume.pdf": "/myresume/static/media/Raamji_Resume.9f804358c9aef7d3dce0.pdf",
     "static/media/dm.png": "/myresume/static/media/dm.bf0c67f7960eb1f41e2b.png",
+    "static/media/coding.png": "/myresume/static/media/coding.cb781790e5fe09a12a16.png",
     "static/media/badminton.png": "/myresume/static/media/badminton.69c89b67bf0ea5143d81.png",
     "static/media/ml.png": "/myresume/static/media/ml.92e5c0108972009a2eca.png",
     "static/media/logo-psg.png": "/myresume/static/media/logo-psg.a11274ab781501acd6fe.png",
     "index.html": "/myresume/index.html",
     "main.75e8d3cc.css.map": "/myresume/static/css/main.75e8d3cc.css.map",
-    "main.991f9583.js.map": "/myresume/static/js/main.991f9583.js.map",
+    "main.dd9764cf.js.map": "/myresume/static/js/main.dd9764cf.js.map",
     "453.f19e9853.chunk.js.map": "/myresume/static/js/453.f19e9853.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.75e8d3cc.css",
-    "static/js/main.991f9583.js"
+    "static/js/main.dd9764cf.js"
   ]
 }
