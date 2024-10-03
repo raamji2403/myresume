@@ -46,11 +46,12 @@ function CourseWorks(){
                              learn, gradually improving its accuracy.</p>
                     </div>
                     <div className="course">
-                        <h4>Basics of Computer Networks</h4>
-                        <p><span className="tab"></span>A computer network is a system that connects two or more computing devices for
-                             transmitting and sharing information. Computing devices include everything 
-                             from a mobile phone to a server. Devices use physical or wireless connections, 
-                             following TCP/IP and OSI models.</p>
+                        <h4>Operating Systems</h4>
+                        <p><span className="tab"></span>
+                        An Operating System (OS) is system software that manages computer hardware
+                         and software resources. It provides a user interface, handles tasks like memory 
+                         management, process control, and file management, and enables communication between 
+                         hardware components and applications for efficient operation and functionality.</p>
                     </div>
                 </div>
             </div>
